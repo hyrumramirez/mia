@@ -31,6 +31,8 @@ header{
     padding-top:30px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
+        z-index: 1000;
+    position: relative;
 }
 
 header a{
@@ -226,5 +228,224 @@ article#main-col{
         margin-left:-80%;
     }
 
-/*slides*/
+/*Form*/
 
+body{
+    margin:0;
+    padding:0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(sfo.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+        
+}
+#contactback{
+    
+    
+    background-image: url(sfo.jpg)cover no-repeat;
+    
+}
+.contact-title{
+    margin-top: 100px;
+    color:#fff;
+    text-transform: uppercase;
+    transition:all 4s ease-in-out;
+}
+.contact-title h1{
+    font-size:32px;
+    
+}
+.contact title h2{
+    font-size:16px;
+}
+form{
+    margin-top:50px;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width:600px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid gray;
+    color:#fff;
+    font-size:18px;
+    margin-bottom: 16px;
+}
+input{
+    height:45px;
+    
+}
+form .submit{
+    background: #ff5722;
+    border-color: transparent;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+form .submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+/*Slides2*/
+
+
+.banner1,.banner2,.banner3,.banner4{
+    height:100vh;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+img{
+    width: 120%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+.text-box{
+    width:600px;
+    position:absolute;
+    top:200px;
+    left:100px;
+    color:#fff;
+    animation: textup 12s linear infinite;
+    transform:translateY(100px);
+    
+}
+.tex-box h1{
+    margin-bottom: 40px;
+    
+}
+.text-box p{
+    font-size:14px;
+    line-height: 18px;
+    margin-top:80px;
+}
+.text-box span{
+    background:red;
+    height:2px;
+    width:100px;
+    position:absolute;
+    left:20;
+}
+.banner1{
+    animation:slide1 12s linear infinite;
+}
+.banner2{
+    animation:slide2 12s linear infinite;
+}
+.banner3{
+    animation:slide3 12s linear infinite;
+}
+.banner4{
+    animation:slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes textup{
+    10%{
+        transform:translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-box1{
+    animation-delay:0s;
+}
+.text-box2{
+    animation-delay:3s;
+}
+.text-box3{
+    animation-delay:6s;
+}
+.text-box4{
+    animation-delay:9s;
+}
+#mainslide10{
+   min-height: 500px;
+    margin-top:20px;
+}
